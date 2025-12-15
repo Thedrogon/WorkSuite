@@ -44,7 +44,7 @@ export default function Navbar() {
           </a>
 
           <button className="text-sm  font-medium px-4 py-2 rounded-md bg-zinc-900 text-white hover:bg-zinc-700">
-            <a href="">Get Started</a>
+            <a href="">Explore WorkSuite</a>
           </button>
         </nav>
       </div>
