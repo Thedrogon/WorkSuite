@@ -1,4 +1,5 @@
-import Github from "./UI/Github";
+import { Link } from "react-router-dom";
+import Github from "../UI/Github";
 
 export default function Navbar() {
   return (
@@ -13,12 +14,12 @@ export default function Navbar() {
         <nav className="flex items-center gap-10">
           <Github/>
 
-          <a
-            href="#"
+          <Link
+            to="/signin"
             className="text-[16px] text-zinc-600 font-semibold hover:text-zinc-900  transition"
           >
             Login
-          </a>
+          </Link>
 
           <button className="text-sm  font-medium px-4 py-2 rounded-md bg-zinc-900 text-white hover:bg-zinc-700 sm:hidden md:inline-block">
             <a href="">Explore WorkSuite</a>

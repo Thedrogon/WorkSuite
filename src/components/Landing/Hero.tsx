@@ -1,4 +1,4 @@
-import DashboardPreview from "./Landing/DashboardPreview";
+import DashboardPreview from "./DashboardPreview";
 
 export default function Hero() {
   return (

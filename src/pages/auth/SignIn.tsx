@@ -1,13 +1,15 @@
 //import React from "react";
 
+import { Link } from "react-router-dom";
+
 const SignIn = () => {
   return (
     <div className="min-h-screen bg-neutral-50 flex items-center justify-center px-4">
       <div className="w-full max-w-md bg-white border border-neutral-200 rounded-xl p-8">
         {/* Brand */}
         <div className="mb-8">
-          <h1 className="text-2xl font-semibold text-neutral-900">
-            Welcome back to WorkSuit
+          <h1 className="text-2xl font-semibold text-neutral-900 tracking-tight">
+            Welcome back to Work<span className="text-neutral-500">Suite</span>
           </h1>
           <p className="text-sm text-neutral-600 mt-1">
             Sign in to manage your organization.
@@ -22,6 +24,7 @@ const SignIn = () => {
             </label>
             <input
               type="email"
+              required
               placeholder="you@company.com"
               className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900"
             />
@@ -33,7 +36,8 @@ const SignIn = () => {
             </label>
             <input
               type="password"
-              placeholder="••••••••"
+              required
+              placeholder="Enter your password"
               className="w-full rounded-lg border border-neutral-300 px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900"
             />
           </div>
@@ -66,9 +70,9 @@ const SignIn = () => {
         {/* Footer */}
         <p className="text-sm text-neutral-600 mt-6 text-center">
           New to WorkSuit?{" "}
-          <span className="text-neutral-900 font-medium cursor-pointer hover:underline">
+          <Link to="/signup" className="text-neutral-900 font-medium cursor-pointer hover:underline">
             Create an account
-          </span>
+          </Link>
         </p>
       </div>
     </div>

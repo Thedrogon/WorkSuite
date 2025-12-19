@@ -1,17 +1,18 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/Landing/About";
-import Roles from "./components/Landing/Roles";
-import Footer from "./components/Landing/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Landinglayout from "./pages/Landinglayout";
+import SignIn from "./pages/auth/SignIn";
+import SignUp from "./pages/auth/SignUp";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900">
-      <Navbar />
-      <Hero />
-      <About />
-      <Roles />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/" element={<Landinglayout />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
