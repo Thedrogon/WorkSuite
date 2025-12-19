@@ -1,11 +1,22 @@
-//import React from 'react'
+// pages/Dashboard.tsx
+import StatsStrip from "../../components/dashboard/StatsStrip";
+import MyTasks from "../../components/dashboard/Mytasks";
+import ActiveProjects from "../../components/dashboard/ActiveProjects";
+import ActivityFeed from "../../components/dashboard/ActivityFeed";
 
-const Dashboard = () => {
+export default function Dashboard() {
   return (
-    <div>
-      Hello Dashboard
-    </div>
-  )
-}
+    <div className="space-y-6">
+      <StatsStrip />
 
-export default Dashboard
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 space-y-6">
+          <MyTasks />
+          <ActiveProjects />
+        </div>
+
+        <ActivityFeed />
+      </div>
+    </div>
+  );
+}
