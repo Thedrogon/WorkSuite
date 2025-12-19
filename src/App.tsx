@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Roles from "./components/Roles";
-import Footer from "./components/Footer";
+import About from "./components/Landing/About";
+import Roles from "./components/Landing/Roles";
+import Footer from "./components/Landing/Footer";
 
 export default function App() {
   return (

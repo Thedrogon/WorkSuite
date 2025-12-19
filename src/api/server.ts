@@ -13,5 +13,9 @@ app.get('/hello', (_,res) => {
     res.json({'message': 'Hello World'})
 })
 
+app.get('/', (_,res) => {
+    res.json({'message':'Hello main server'})
+})
+
 
 
