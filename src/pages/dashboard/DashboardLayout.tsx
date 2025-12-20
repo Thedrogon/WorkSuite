@@ -1,7 +1,7 @@
 // components/layout/DashboardLayout.tsx
-import Dashboard from "../../pages/dashboard/Dashboard";
-import Sidebar from "./sidebar/Sidebar";
-import Topbar from "./topbar/Topbar";
+import Dashboard from "../../components/dashboard/Dashboard";
+import Sidebar from "../../components/dashboard/sidebar/Sidebar";
+import Topbar from "../../components/dashboard/topbar/Topbar";
 
 export default function DashboardLayout() {
   return (
@@ -12,7 +12,7 @@ export default function DashboardLayout() {
         <Topbar />
 
         <main className="flex-1 overflow-y-auto px-6 py-4">
-          <Dashboard/>
+          <Dashboard />
         </main>
       </div>
     </div>

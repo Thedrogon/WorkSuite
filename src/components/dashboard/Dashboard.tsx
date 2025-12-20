@@ -1,8 +1,8 @@
 // pages/Dashboard.tsx
-import StatsStrip from "../../components/dashboard/StatsStrip";
-import MyTasks from "../../components/dashboard/Mytasks";
-import ActiveProjects from "../../components/dashboard/ActiveProjects";
-import ActivityFeed from "../../components/dashboard/ActivityFeed";
+import StatsStrip from "./StatsStrip";
+import MyTasks from "./Mytasks";
+import ActiveProjects from "./ActiveProjects";
+import ActivityFeed from "./ActivityFeed";
 
 export default function Dashboard() {
   return (
