@@ -1,10 +1,11 @@
 'use client'
 
 import { useDroppable } from '@dnd-kit/core';
+import type { ReactNode } from 'react';
 
 type Props = {
   id: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export const KanbanBoard = ({ id, children }: Props) => {
@@ -13,12 +14,8 @@ export const KanbanBoard = ({ id, children }: Props) => {
   return (
     <div
       ref={setNodeRef}
+      className='w-70 p-8 bg-[#f9fafb] rounded-lg border-solid border-[#e5e7eb] border-2'
       style={{
-        width: 280,
-        background: '#f9fafb',
-        border: '1px solid #e5e7eb',
-        borderRadius: 8,
-        padding: 8,
         outline: isOver ? '2px solid #6366f1' : 'none',
       }}
     >

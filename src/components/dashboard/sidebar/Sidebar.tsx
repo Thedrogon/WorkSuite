@@ -11,7 +11,6 @@ export default function Sidebar() {
 
       {/* Main Navigation */}
       <nav className="flex-1 px-2 space-y-1">
-        <SidebarItem label="Home" />
         <SidebarItem label="Projects" />
         <SidebarItem label="Tasks" />
         <SidebarItem label="Workflow" />
