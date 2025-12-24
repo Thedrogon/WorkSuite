@@ -1,8 +1,9 @@
 // pages/Dashboard.tsx
 import StatsStrip from "./StatsStrip";
-import MyTasks from "./Mytasks";
+import MyTasks from "./MyTasks";
 import ActiveProjects from "./ActiveProjects";
 import ActivityFeed from "./ActivityFeed";
+import Kanban from "../kanban/KanbanSide";
 
 export default function Dashboard() {
   return (
@@ -12,6 +13,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
           <MyTasks />
+          <Kanban/>
           <ActiveProjects />
         </div>
 
