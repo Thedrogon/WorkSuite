@@ -4,6 +4,7 @@ import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
 //import Dashboard from "./pages/dashboard/Dashboard";
 import DashboardLayout from "./pages/dashboard/DashboardLayout";
+import Newdash from "./components/Newdash";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Landinglayout />} />
         <Route path="/dashboard" element={<DashboardLayout />} />
+        <Route path="/newdash" element={<Newdash/> } />
       </Routes>
     </BrowserRouter>
   );
