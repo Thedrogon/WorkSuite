@@ -12,9 +12,9 @@ export default function Sidebar() {
       {/* Main Navigation */}
       <nav className="flex-1 px-2 space-y-1">
         <SidebarItem label="Projects" />
-        <SidebarItem label="Tasks" />
-        <SidebarItem label="Workflow" />
+        <SidebarItem label="Activities" />
         <SidebarItem label="People" />
+        <SidebarItem label="Teams" />
       </nav>
 
       {/* Bottom Utilities */}

@@ -53,6 +53,11 @@ enum Type {
   TERMINATED
 }
 
+enum Isactive {
+  true
+  false
+}
+
 enum Role {
   ENGINEER
   HR
