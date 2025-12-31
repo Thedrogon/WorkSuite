@@ -5,6 +5,7 @@ import SignUp from "./pages/auth/SignUp";
 //import Dashboard from "./pages/dashboard/Dashboard";
 import DashboardLayout from "./pages/dashboard/DashboardLayout";
 import Newdash from "./components/Newdash";
+import Notfound from "./pages/Notfound";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
         <Route path="/" element={<Landinglayout />} />
         <Route path="/dashboard" element={<DashboardLayout />} />
         <Route path="/newdash" element={<Newdash/> } />
-        <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="*" element={<Notfound/>} />
       </Routes>
     </BrowserRouter>
   );
